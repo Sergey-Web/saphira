@@ -17,9 +17,9 @@ $dog1 = new Dog('Marsik', 1);
 $dog2 = new Dog('Lilu', 2);
 $dog3 = new Dog('Beethoven', 3);
 
-$turtle1 = new Dog('Sonya', 4);
-$turtle2 = new Dog('Jem', 5);
-$turtle3 = new Dog('Hip-Hop', 6);
+$turtle1 = new Turtle('Sonya', 4);
+$turtle2 = new Turtle('Jem', 5);
+$turtle3 = new Turtle('Hip-Hop', 6);
 
 
 $animalShelter->add($cat1);
@@ -32,4 +32,4 @@ $animalShelter->add($turtle1);
 $animalShelter->add($turtle2);
 $animalShelter->add($turtle3);
 
-var_dump($animalShelter->show());
+var_dump($animalShelter->show('turtle'));
