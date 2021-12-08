@@ -32,4 +32,4 @@ $animalShelter->add($turtle1);
 $animalShelter->add($turtle2);
 $animalShelter->add($turtle3);
 
-var_dump($animalShelter->give('dog'));
+var_dump($animalShelter->show());

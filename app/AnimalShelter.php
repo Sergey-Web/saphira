@@ -50,11 +50,11 @@ class AnimalShelter implements AddAnimal, ShowAnimals, GiveAnimal
     /**
      * @throws Exception
      */
-    private function findAnimalsByType(string $type): array
+    private function findAnimalsByType(?string $type): array
     {
         $animals = [];
 
-        if ($type !== null) {
+        if (!empty($type)) {
             $this->checkType($type);
             foreach ($this->animals as $animal) {
                 /** @var Animal $animal */
